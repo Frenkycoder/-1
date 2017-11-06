@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="publications@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="publications">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <table id="6" parent="2" name="classics"/>
+    <column id="7" parent="6" name="author">
+      <Position>1</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="8" parent="6" name="title">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="9" parent="6" name="category">
+      <Position>3</Position>
+      <DataType>varchar(16)|0</DataType>
+    </column>
+    <column id="10" parent="6" name="year">
+      <Position>4</Position>
+      <DataType>smallint(6)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
